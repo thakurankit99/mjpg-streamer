@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OMaps</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <button id="menu-toggle">☰</button>
+        <h1>OMaps Live Stream </h1>
+    </header>
+    <aside id="sidebar">
+        <h2>A Resource-Friendly Streaming Application</h2>
+        <nav id="menu">
+            <a class="active" href="index.html">Home</a>
+            <a href="static.html">Static</a>
+            <a href="stream.html">Stream</a>
+            <a href="java.html">Java</a>
+            <a href="javascript.html">Javascript</a>
+            <a href="videolan.html">VideoLAN</a>
+            <a href="control.htm" target="_blank">Control</a>
+        </nav>
+        <h3>Version info:</h3>
+        <p>v1 (June 10, 2024)</p>
+    </aside>
+    <main id="content">
+        <h1>About</h1>
+        <h2>Details about the OMaps Live Stream</h2>
+        <section>
+            <h3>Congratulations</h3>
+            <p>You successfully managed to install this streaming web server. If you can see this page, you can also access the stream of JPGs, which can originate from your webcam, for example. This installation consists of these example pages, and you may customize the look and content.</p>
+            <img src="example.jpg" width="512" height="160" alt="Example image">
+            <p>The reason for developing this software was the need for a simple and resource-friendly streaming application for Linux-UVC compatible webcams. The predecessor <i>uvc-streamer</i> works well, but I wanted to implement a few more ideas. For instance, plugins can be used to process the images. One input plugin copies images to a global variable, multiple output plugins can access those images. For example, this webpage is served by the <i>output_http.so</i> plugin.</p>
+            <a href="static.html"><img src="./?action=snapshot" width="170" height="128" alt="Static image example"></a>
+            <p>The image displayed here was grabbed by the input plugin. The HTTP request contains the GET parameters <i>action=snapshot</i>. This requests one single picture from the image input. To display another example, just click on the picture.</p>
+        </section>
+        <section>
+            <h3>About the examples</h3>
+            <p>To view the stream with any browser, you may try the <i>javascript</i> or <i>java</i> subpages. Firefox is able to display the M-JPEG stream directly.</p>
+            <h3>About this server</h3>
+            <p>This server is running software written for the OMaps project. The OMaps developers cannot be held responsible for installations of this software.</p>
+            <p>&copy; OMaps</p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
